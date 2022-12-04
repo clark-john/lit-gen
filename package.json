@@ -1,0 +1,53 @@
+{
+  "name": "lit-gen",
+  "version": "1.0.0",
+  "description": "A package used to scaffold different types of Lit web components.",
+  "license": "MIT",
+  "author": "John Clark",
+  "main": "index.js",
+  "bin": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src/**/*.ts",
+    "format": "prettier ./src/**/*.ts -w"
+  },
+  "keywords": [
+    "lit",
+    "lit generator",
+    "scaffold component",
+    "component generator"
+  ],
+  "hooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": "yarn lint || npm run lint"
+  },
+  "prettier": {
+    "semi": true,
+    "endOfLine": "crlf",
+    "arrowParens": "avoid"
+  },
+  "dependencies": {
+    "arg": "^5.0.2",
+    "colorette": "^2.0.19",
+    "lit": "^2.4.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "lit": "2.4.1"
+  }
+}
