@@ -10,7 +10,8 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src/**/*.ts",
-    "format": "prettier ./src/**/*.ts -w"
+    "format": "prettier ./src/**/*.ts -w",
+    "prepare": "husky install"
   },
   "keywords": [
     "lit",
@@ -18,6 +19,10 @@
     "scaffold component",
     "component generator"
   ],
+  "repository": {
+    "url": "https://github.com/clark-john/lit-gen.git",
+    "type": "git"
+  },
   "hooks": {
     "pre-commit": "lint-staged"
   },
