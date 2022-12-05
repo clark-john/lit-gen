@@ -59,3 +59,5 @@ if (command) {
 } else {
   displayHelp();
 }
+
+// lint staged git hook test
