@@ -23,11 +23,8 @@
     "url": "https://github.com/clark-john/lit-gen.git",
     "type": "git"
   },
-  "hooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
-    "*.ts": "yarn lint || npm run lint"
+    "*.ts": "eslint"
   },
   "prettier": {
     "semi": true,
