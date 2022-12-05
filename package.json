@@ -10,8 +10,7 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src/**/*.ts",
-    "format": "prettier ./src/**/*.ts -w",
-    "prepare": "husky install"
+    "format": "prettier ./src/**/*.ts -w"
   },
   "keywords": [
     "lit",
