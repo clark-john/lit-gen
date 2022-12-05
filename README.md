@@ -4,6 +4,8 @@ A command-line tool used to generate Lit web components such as lit elements, di
 
 ## Installation
 
+### Locally (recommended)
+
 ```bash
 # npm
 npm i lit-gen -D
